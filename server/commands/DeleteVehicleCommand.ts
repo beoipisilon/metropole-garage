@@ -2,7 +2,7 @@ import { BaseCommand } from '../models/BaseCommand';
 
 export class DeleteVehicleCommand extends BaseCommand {
     constructor() {
-        super('delveh', 'Deleta um veículo da garagem', false, 'delete.vehicle');
+        super('delveh', 'Deleta um veículo da garagem', true, 'delete.vehicle');
     }
 
     protected async execute(source: number): Promise<void> {
@@ -10,7 +10,7 @@ export class DeleteVehicleCommand extends BaseCommand {
             console.log('Nao foi possivel deletar o veiculo');
             return;
         }
-        
+
         emitNet('garage:deleteVehicle', source);
     }
 } 

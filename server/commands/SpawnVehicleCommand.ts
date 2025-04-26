@@ -6,7 +6,7 @@ export class SpawnVehicleCommand extends BaseCommand {
     private vehicleManager: VehicleManager;
 
     constructor() {
-        super('car', 'Spawna um veículo da garagem', false, 'spawn.vehicle');
+        super('car', 'Spawna um veículo da garagem', true, 'spawn.vehicle');
         this.vehicleManager = VehicleManager.getInstance();
     }
 
