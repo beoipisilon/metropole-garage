@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Inter', serif;
+}
+
+.hideScroll::-webkit-scrollbar
+{
+	display: none;
+}
+
+body {
+  @apply text-white overflow-hidden select-none;
+}
+
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 80%;
+  }
+}

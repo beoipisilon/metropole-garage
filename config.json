@@ -1,0 +1,13 @@
+{
+    "garages": [
+        {
+            "name": "Garagem Central",
+            "coords": { "x": 224.38, "y": -803.61, "z": 30.63, "heading": 270.0 },
+            "spawnLocations": [
+                { "x": 224.44, "y": -796.6, "z": 29.99, "heading": 270.0 },
+                { "x": 224.76, "y": -793.51, "z": 30.68, "heading": 270.0 }
+            ],
+            "radius": 5.0
+        }
+    ]
+}
